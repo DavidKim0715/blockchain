@@ -1,0 +1,36 @@
+{
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/env",
+            {
+              "targets": { "node": "current" }
+            }
+          ]
+        ]
+      },
+      "development": {
+        "presets": [
+          [
+            "@babel/env",
+            {
+              "targets": "last 2 versions"
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          [
+            "@babel/env",
+            {
+              "targets": "> .5%, last 2 versions, not dead, not op_mini all",
+              "useBuiltIns": "usage",
+              "corejs": "3.6.5"
+            }
+          ]
+        ]
+      }
+    }
+}
