@@ -1,2 +1,2 @@
 # blockchain
-node.js blockchain project
+blockchain react project
